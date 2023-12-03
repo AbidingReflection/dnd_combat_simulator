@@ -17,15 +17,17 @@ class Encounter:
                 print(character.roll_initiative(), "\n")
 
 factions_example = {
+
     "Pirates": [
-        Character(21, {"STR": 12}),
-        Character(12, {"INT": 11})
+        Character(21, {"STR": 12, "Dex": 8}),
+        Character(12, {"INT": 11, "Dex": 8})
     ],
+
     "Good-guys™": [
-        Character(30, {"STR": 15, "INT": 14}),
-        Character(30, {"CON": 15}),
-        Character(30, {"CON": 15}),
-        Character(30, {"CON": 15})
+        Character(30, {"STR": 15, "INT": 14, "Dex": 8}),
+        Character(30, {"CON": 15, "Dex": 8}),
+        Character(30, {"CON": 15, "Dex": 8}),
+        Character(30, {"Dex": 20})
     ]
 }
 
