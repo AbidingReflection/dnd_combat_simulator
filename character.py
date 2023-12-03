@@ -1,8 +1,20 @@
 from dice_roll import DiceRoll
 
 class Character:
-    ABILITY_SCORES = ["strength", "dexterity", "constitution", "intelligence", "wisdom", "charisma"]
-    ABILITY_SCORE_ABBREVIATIONS = {"STR": "strength", "DEX": "dexterity", "CON": "constitution", "INT": "intelligence", "WIS": "wisdom", "CHA": "charisma"}
+    
+    ABILITY_SCORES = [  "strength", 
+                        "dexterity", 
+                        "constitution", 
+                        "intelligence", 
+                        "wisdom", 
+                        "charisma"]
+
+    ABILITY_SCORE_ABBREVIATIONS = { "STR": "strength", 
+                                    "DEX": "dexterity", 
+                                    "CON": "constitution", 
+                                    "INT": "intelligence", 
+                                    "WIS": "wisdom", 
+                                    "CHA": "charisma"}
 
     def __init__(self, hit_points: int, ability_scores: dict):
         self.hit_points = hit_points
